@@ -1,0 +1,168 @@
+{
+    "info": {
+      "name": "Suolingo Backend API",
+      "_postman_id": "suolingo-backend-collection",
+      "description": "Postman collection for testing Suolingo backend APIOnly app",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Courses - List All",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/courses",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["courses"]
+          }
+        }
+      },
+      {
+        "name": "Courses - Get One",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/courses/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["courses","1"]
+          }
+        }
+      },
+      {
+        "name": "Words - List by level",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/words?level=A1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["words"],
+            "query": [{"key": "level", "value": "A1"}]
+          }
+        }
+      },
+      {
+        "name": "Words - Get Word Details",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/words/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["words","1"]
+          }
+        }
+      },
+      {
+        "name": "Words - Get Audios",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/words/1/audios",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["words","1","audios"]
+          }
+        }
+      },
+      {
+        "name": "Words - Get Videos",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/words/1/videos",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["words","1","videos"]
+          }
+        }
+      },
+      {
+        "name": "WordAudio - Create",
+        "request": {
+          "method": "POST",
+          "header": [{"key": "Content-Type","value": "application/json"}],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"word_audio\": {\n    \"word_id\": 1,\n    \"audio_url\": \"audios/apple_1.mp3\",\n    \"speaker_name\": \"Male 1\",\n    \"accent\": \"US\",\n    \"duration\": 1.2\n  }\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/word_audios",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["word_audios"]
+          }
+        }
+      },
+      {
+        "name": "WordVideo - Create",
+        "request": {
+          "method": "POST",
+          "header": [{"key": "Content-Type","value": "application/json"}],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"word_video\": {\n    \"word_id\": 1,\n    \"video_url\": \"https://cdn.example.com/videos/apple_1.mp4\",\n    \"speaker_name\": \"Male 1\",\n    \"accent\": \"US\",\n    \"duration\": 3.5\n  }\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/word_videos",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["word_videos"]
+          }
+        }
+      },
+      {
+        "name": "Users - Create",
+        "request": {
+          "method": "POST",
+          "header": [{"key": "Content-Type","value": "application/json"}],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"user\": {\n    \"email\": \"testuser@example.com\",\n    \"username\": \"testuser\",\n    \"password\": \"123456\",\n    \"level\": 1,\n    \"total_score\": 0\n  }\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/users",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["users"]
+          }
+        }
+      },
+      {
+        "name": "UserWords - Create",
+        "request": {
+          "method": "POST",
+          "header": [{"key": "Content-Type","value": "application/json"}],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"user_word\": {\n    \"user_id\": 1,\n    \"word_id\": 1,\n    \"status\": \"not_started\",\n    \"practice_count\": 0\n  }\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/users/1/user_words",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["users","1","user_words"]
+          }
+        }
+      }
+    ]
+  }
+  
