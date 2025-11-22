@@ -40,7 +40,7 @@ Bu repository, Suolingo uygulamasının **Ruby on Rails tabanlı backend API** p
 
 ## UML DİYAGRAMI
 
-!(https://github.com/hcatakli/uml_diagram.jpg)
+uml_diagram.jpg
 
 ---
 
