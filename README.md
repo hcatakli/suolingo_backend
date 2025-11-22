@@ -38,6 +38,12 @@ Bu repository, Suolingo uygulamasının **Ruby on Rails tabanlı backend API** p
 
 ---
 
+## UML DİYAGRAMI
+
+!(https://github.com/hcatakli/uml_diagram.jpg)
+
+---
+
 ## 🛠️ Kullanılan Teknolojiler
 
 | Teknoloji | Açıklama |
@@ -82,9 +88,9 @@ rails s
 ## 🧪 Postman Collection
 
 Proje ile birlikte gelen Postman koleksiyonunu şu şekilde içe aktarabilirsiniz:
-Postman → Import
-Dosya seç → Suolingo.postman_collection.json
-Koleksiyon artık kullanılabilir!
+- Postman → Import
+- Dosya seç → `postmanc.json`
+- Koleksiyon artık kullanılabilir!
 
 ## 📡 Temel API Endpoint’leri
 ### 🔑 Kullanıcı
