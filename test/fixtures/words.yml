@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course: one
+  term: MyString
+  definition: MyText
+  example_sentence: MyText
+  level: MyString
+  category: MyString
+
+two:
+  course: two
+  term: MyString
+  definition: MyText
+  example_sentence: MyText
+  level: MyString
+  category: MyString

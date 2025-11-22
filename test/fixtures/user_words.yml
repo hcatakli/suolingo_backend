@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  word: one
+  status: MyString
+  last_practiced_at: 2025-11-19 14:53:30
+  practice_count: 1
+
+two:
+  user: two
+  word: two
+  status: MyString
+  last_practiced_at: 2025-11-19 14:53:30
+  practice_count: 1

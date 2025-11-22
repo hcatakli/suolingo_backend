@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: one
+  audio_url: MyString
+  speaker_name: MyString
+  accent: MyString
+  duration: 1.5
+
+two:
+  word: two
+  audio_url: MyString
+  speaker_name: MyString
+  accent: MyString
+  duration: 1.5
